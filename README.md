@@ -1,13 +1,13 @@
 
 # 🌎 Earth 3D Modeling
 
-WebGL과 GLSL을 활용한 **3D 지구 모델링 및 태양광 시뮬레이션** 프로젝트입니다.
+WebGL과 GLSL을 활용한 **지구 3D 모델링 시뮬레이션** 프로젝트입니다.
 
 위도·경도 기반으로 지구를 생성하고, NASA 위성 텍스처와 지형 정보를 적용하여 지구의 자전, 조명 변화, 사용자 상호작용을 구현했습니다.
 
 ## 주요 기능
 
-- **3D 지구 모델링**: 위도·경도 좌표를 이용한 구면 메시 생성
+- **지구 모델링**: 위도·경도 좌표를 이용한 구면 메시 생성
 - **텍스처 매핑**: NASA 위성 이미지를 활용한 지구 표면 표현
 - **지형 표현**: 지형 영상의 밝기값을 이용한 정점 변위
 - **지구 자전**: 자동 자전 및 23.4° 자전축 기울기
@@ -30,6 +30,7 @@ WebGL과 GLSL을 활용한 **3D 지구 모델링 및 태양광 시뮬레이션**
 Earth-3D-Modeling/
 ├── index.html
 ├── main.js
+├── download_assets.py
 └── assets/
     ├── earth_day.png
     └── earth_relief.jpg
@@ -62,9 +63,8 @@ python -m http.server 8000
 개발 과정에서 ChatGPT를 보조적으로 활용했습니다.
 
 - NASA 위성 텍스처 자료 및 다운로드 방법 탐색
-- GLSL Fragment Shader의 조명 및 색상 처리 코드 작성·수정
-- Arcball 및 Quaternion 기반 회전 구현 보조
-- 태양 방향 슬라이더와 공전 미니맵 구현 보조
+- GLSL Fragment Shader의 조명 및 색상 처리 코드 오류 수정
+- 초반 작성한 구현에서 부자연스러운 회전으로 인해 Arcball 및 Quaternion 기반 회전 구현으로 수정하고자 기본적인 예시 코드를 제시 받아 이를 수정 보완하며 활용
 - HTML/CSS 배경색 추천 및 오류 해결
 - README 초안 작성
 
@@ -73,7 +73,3 @@ python -m http.server 8000
 - [NASA Scientific Visualization Studio](https://svs.gsfc.nasa.gov/)
 - [NASA Earth Observatory](https://earthobservatory.nasa.gov/)
 - [MDN WebGL](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API)
-
-## 프로젝트 정보
-
-- **과목**: 컴퓨터 그래픽스와 메타버스
