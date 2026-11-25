@@ -66,7 +66,7 @@ python -m http.server 8000
 - GLSL Fragment Shader의 조명 및 색상 처리 코드 오류 수정
 - 초반 작성한 구현에서 부자연스러운 회전으로 인해 Arcball 및 Quaternion 기반 회전 구현으로 수정하고자 기본적인 예시 코드를 제시 받아 이를 수정 보완하며 활용
 - HTML/CSS 배경색 추천 및 오류 해결
-- README 초안 작성
+- README 작성 시 발생한 오류 해결 (문법 수정)
 
 ## 참고 자료
 
